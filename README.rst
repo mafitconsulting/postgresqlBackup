@@ -7,7 +7,7 @@ Preparing for Development
 -------------------------
 
 1. Ensure ``pip`` and ``pipenv`` are installed.
-2. Clone repository: ``git clone git@github.com:example/pgbackup``
+2. Clone repository: ``git clone git@github.com:mafitconsulting/postgresqlBackup.git``
 3. Fetch development dependencies: ``make install``
 
 Usage
@@ -19,13 +19,13 @@ S3 Example w/ bucket name:
 
 ::
 
-    $ pgbackup postgres://bob@example.com:5432/db_one --driver s3 backups
+    $ pgbackup postgres://user@example:5432/db_one --driver s3 backups
 
 Local Example w/ local path:
 
 ::
 
-    $ pgbackup postgres://bob@example.com:5432/db_one --driver local /var/local/db_one/backups/dump.sql
+    $ pgbackup postgres://user@example:5432/db_one --driver local /var/local/db_one/backups/dump.sql
 
 Running Tests
 -------------
